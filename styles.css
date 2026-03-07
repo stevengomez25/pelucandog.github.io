@@ -1,250 +1,274 @@
-:root{
-  --light-color:#383636;
-  ;
-  --secondary-color:#ebb78d;
-
-}
-footer{
-  background:linear-gradient(#93d8f7, #8cdde5);
-}
-
-.container-intro{
-  color: var(--light-color);
-  display:flex;
-  align-items: center;
-  justify-content: space-evenly;
+:root {
+    --primary-blue: #2c3e50;
+    --accent-blue: #93d8f7;
+    --accent-green: #8cdde5;
+    --secondary-peach: #ebb78d;
+    --text-dark: #333333;
+    --white: #ffffff;
+    --transition: all 0.3s ease;
 }
 
-.slogan-icon {
-  width: 100px;
-  height: 75px;
-}
-.navbar-brand span{
-  float: left;
-  display: block;
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+    overflow-x: hidden;
 }
 
-.container-intro img{
-  max-height: 100vh;
-  max-width: 50vw;
-  filter: drop-shadow(10px 10px 20px #000);
-}
-.container-intro-stuff{
-  margin:30px;
-
-}
-
-.container-title{
-  margin-bottom: 30px;
-}
-header{
-  background-image: url(https://img.freepik.com/foto-gratis/fondo-azul-degradado-lujo-abstracto-azul-oscuro-liso-banner-estudio-vineta-negra_1258-63452.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.nav{
-  color: #fff;
-  position: fixed;
-}
-
-.container-form-contact{
-  display: inline;
-  text-align: center;
-  height: 100dvh;
-}
-.row{
-  display: inline;
-}
-
-.form-send-info{
-  height: 100dvh;
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-  align-items:center;
-  padding:20px;
-}
-input::placeholder{
-  color: #fff;
-  transition: all 0.2s ease;
-}
-.form-send-info input,textarea{
-  transition: all 0.5s;
-  color: #fff;
-  background-color: var(--secondary-color);
-  border-radius: 10px;
-  margin: 30px;
-  width: 50%;
-  border: none;
-  padding: 30px;
-  overflow: hidden;
-}
-input:hover,textarea:hover{
-  color: #000;
-  background-color: #fff;
-  outline: solid 1px #000;
-
-}
-input:hover::placeholder,textarea:hover::placeholder{
-  color: #000;
-}
-input:focus,textarea:focus{
-  color: #000;
-  background-color: #fff;
-  outline: solid 1px #000;
-
-}
-input:focus::placeholder,textarea:focus::placeholder{
-  color: #000;
-}
-
-
-input[type="submit"]{
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.form-send-info textarea{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  
-  /* Apply min height of 4 lines */
-  line-height: 1.2;
-  min-height: calc(1.2em * 4);
-  
-  /* Border styles */
-  border: 1px solid gray;
-  border-radius: 5px;
-}
-textarea::placeholder{
-  color: #fff;
-}
-footer{
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.footer-content{
-  width: 1200px;
-  display: flex;
-  margin-top:70px;
-  margin-bottom: 25px;
-}
-.copyright{
-  width: 1200px;
-  border-top: 1px solid var(--light-color);
-  color: var(--light-color);
-  margin: 10px;
-  padding: 10px;
-  text-align: center;
-}
-
-.footer-card{
-  width:400px;
-  padding: 20px;
-  color: var(--light-color);
-}
-
-.footer-card h5{
-  font-size: 20px;
-}
-
-.footer-card p{
-  font-size:14px;
-}
-
-.sub-input{
-  border-radius: 10px;
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-.sub-input::placeholder{
-  color: var(--light-color);
-}
-
-.sub-submit{
-  border-radius: 10px;
-  background-color: var(--secondary-color);
-  color:var(--light-color);
-  margin-top: 5px;
-  padding: 7px 30px;
-  border: 1px solid transparent;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.3s;
-}
-
-.social-icons a{
-  color: var(--light-color);
-  margin: 5px;
-  background-color: var(--secondary-color);
-  padding:2.5px 7px;
-  font-size:24px;
-  border-radius: 100px;
-}
-
-@media (max-width: 1200px) {
-  .footer-content{
-      width: 96%;
-      flex-wrap: wrap;
-  }
-  .copyright{
-      width: 96%;
-  }
-  
-}
-
-.imagen_producto{
-  width: 300px;
-  height:300px;
-}
-
-.products-container{
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.products-container div{
-  margin:30px;
-}
-
-.container-services{
-  display: flex;
-  justify-content:center;
-}
-.container-services div{
-  margin:20px;
-}
-
-.container-fluid{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon{
-  width:50px;
-  height: 50px;
-}
-
-@media(max-width:1100px){
-  .transform{
-    display: block;
-  }
-  .container-services{
+/* --- Hero Section --- */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                url('https://img.freepik.com/foto-gratis/fondo-azul-degradado-lujo-abstracto-azul-oscuro-liso-banner-estudio-vineta-negra_1258-63452.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
     display: flex;
-    flex-wrap: wrap;
-  }
+    flex-direction: column;
+}
+
+.hero-content {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.floating-img {
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5));
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+/* --- Botones --- */
+.btn-primary-custom {
+    background-color: var(--accent-green);
+    border: none;
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+.btn-secondary-custom {
+    background-color: var(--secondary-peach);
+    border: none;
+    color: var(--white);
+    transition: var(--transition);
+}
+
+.btn-secondary-custom:hover {
+    background-color: #d6a179;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* --- Navbar --- */
+.navbar-brand img {
+    height: 60px;
+    transition: var(--transition);
+}
+
+.nav-link {
+    font-weight: 500;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.search-input {
+    border-radius: 20px 0 0 20px;
+    border: none;
+}
+
+.btn-primary-custom {
+    border-radius: 0 20px 20px 0;
+}
+
+/* --- Footer --- */
+footer {
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-green));
+    position: relative;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: var(--secondary-peach);
+    color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    background: var(--primary-blue);
+}
+
+.copyright {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    font-size: 0.85rem;
+}
+
+/* --- Utils --- */
+.underline {
+    width: 60px;
+    height: 4px;
+    background: var(--secondary-peach);
+    border-radius: 2px;
+}
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    background: var(--accent-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+/* --- Estilos Específicos de Ubicación --- */
+
+.map-wrapper {
+    position: relative;
+    border: 8px solid white;
+    transition: var(--transition);
+}
+
+.map-wrapper:hover {
+    transform: scale(1.01);
+}
+
+.icon-small {
+    width: 45px;
+    height: 45px;
+    background: var(--accent-blue);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 1.2rem;
+}
+
+.bg-primary-custom {
+    background-color: var(--secondary-peach) !important;
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.instruction-card {
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Mejora para el navbar en páginas internas */
+.navbar-light .nav-link {
+    color: var(--primary-blue) !important;
+}
+
+.navbar-light .nav-link:hover {
+    color: var(--secondary-peach) !important;
+}
+
+/* Servicios  */
+
+.service-img {
+    height: 200px;
+    object-fit: cover; /* Evita que la imagen se estire */
+}
+
+.service-hover-card {
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.service-hover-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+.service-hover-card .btn-primary-custom {
+    border-radius: 50px; /* Botones más modernos redondeados */
+    padding: 8px 25px;
+}
+
+/* contact us */
+
+/* --- Estilos Formulario de Contacto --- */
+.contact-sidebar {
+    background: linear-gradient(135deg, var(--primary-blue), #455a64) !important;
+}
+
+.form-control {
+    border: 1px solid #dee2e6;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.form-control:focus {
+    border-color: var(--secondary-peach);
+    box-shadow: 0 0 0 0.25rem rgba(235, 183, 141, 0.25);
+}
+
+.social-icons-contact i {
+    font-size: 1.5rem;
+    transition: var(--transition);
+}
+
+.social-icons-contact a:hover i {
+    color: var(--accent-green);
+    transform: translateY(-3px);
+}
+
+
+/* Store */
+
+/* --- Estilos de la Tienda --- */
+.product-card {
+    transition: var(--transition);
+    position: relative;
+    border-radius: 15px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+}
+
+.product-card img {
+    height: 180px;
+    object-fit: contain; /* Para que los productos no se corten */
+    background-color: #f8f9fa;
+    border-radius: 15px 15px 0 0;
+}
+
+.product-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: var(--secondary-peach);
+    color: white;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.text-primary-custom {
+    color: var(--primary-blue);
 }
