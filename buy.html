@@ -1,93 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="assets/icon.ico">
-    <title>Boutique | PeluCanDog</title>
+    <title>Boutique Spa | PeluCanDog</title>
 </head>
-<body class="bg-light">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/slogan.png" alt="Logo" class="slogan-icon" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="buy.html">Boutique</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Nosotros</a>
-                        <ul class="dropdown-menu border-0 shadow">
-                            <li><a class="dropdown-item" href="found_us.html">Ubicación</a></li>
-                            <li><a class="dropdown-item" href="our_services.html">Servicios</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="contact.html">Contacto</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <header class="bg-white py-5 border-bottom mb-5">
-        <div class="container text-center">
-            <h1 class="fw-bold">Boutique Exclusiva</h1>
-            <p class="text-muted">Productos premium para prolongar la experiencia del spa en casa</p>
-            <div class="underline mx-auto"></div>
+<body>
+    <header class="section-cyan position-relative pb-5">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent pt-3">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <i class="fas fa-paw fs-2 me-2"></i>
+                    <span class="fw-bold fs-3 brand-text">PeluCanDog</span>
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-medium">
+                        <li class="nav-item"><a class="nav-link px-3" href="index.html">INICIO</a></li>
+                        <li class="nav-item"><a class="nav-link active px-3" href="buy.html">BOUTIQUE</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="our_services.html">SERVICIOS</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="contact.html">CONTACTO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container text-center text-white mt-5 pt-4 mb-5 pb-4">
+            <h1 class="display-3 fw-bold" data-aos="fade-down" data-aos-duration="1000">Boutique Exclusiva</h1>
+            <p class="lead fw-medium mt-3" data-aos="fade-up" data-aos-delay="200">Productos premium para prolongar la experiencia del spa en casa</p>
+        </div>
+
+        <div class="custom-shape-divider-bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill-peach"></path>
+            </svg>
         </div>
     </header>
 
-    <main class="container mb-5">
-        <div class="row g-4 justify-content-center" id="products-grid">
-            
+    <main class="section-peach position-relative pb-5 pt-4">
+        <div class="container z-2 position-relative mb-5 pb-5">
+            <div class="row g-4 justify-content-center" id="products-grid">
+                
+            </div>
+        </div>
+
+        <div class="custom-shape-divider-bottom-2">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V3C1132.19,26.09,1055.71,18.48,985.66,92.83Z" class="shape-fill-cyan"></path>
+            </svg>
         </div>
     </main>
 
-    <footer class="pt-5">
-        <div class="container footer-content">
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6">
-                    <img src="assets/slogan.png" alt="Logo" class="icon mb-3 w-50 filter-dark">
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+    <footer class="section-cyan text-white pb-4 pt-5">
+        <div class="container">
+            <div class="row g-4 text-center text-lg-start">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="fw-bold mb-3"><i class="fas fa-paw me-2"></i>PeluCanDog</h4>
+                    <p class="small">El primer Pet Spa Boutique de Floridablanca. Diseñado para la felicidad de tu mascota.</p>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <h5 class="fw-bold mb-3">Accesos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+                        <li><a href="buy.html" class="text-white text-decoration-none">Boutique</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <h5 class="fw-bold mb-3">Síguenos</h5>
+                    <div class="social-links mb-3">
+                        <a href="#" class="text-white fs-4 me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white fs-4 me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/573013432483?text=%C2%A1Hola!%20Me%20interesa%20consultar%20sobre" target="_blank" class="text-white fs-4"><i class="fab fa-whatsapp"></i></a>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="fw-bold">Nosotros</h5>
-                    <p class="text-muted small">Comprometidos con la belleza y relajación de tus mascotas. Un oasis de cuidado y estética en un entorno exclusivo y acogedor.</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="fw-bold">Contacto</h5>
-                    <p class="text-muted small">
-                        <i class="fas fa-envelope me-2"></i> petshop@gmail.com<br>
-                        <i class="fas fa-phone me-2"></i> <a href="https://wa.me/573013432483?text=%C2%A1Hola!%20Me%20interesa%20consultar%20sobre">301-343-2483</a>
+                    <p class="small mb-1"><i class="fas fa-envelope me-2"></i> petshop@gmail.com</p>
+                    <p class="small">
+                        <i class="fas fa-phone me-2"></i>
+                        <a href="https://wa.me/573013432483?text=%C2%A1Hola!%20Me%20interesa%20consultar%20sobre" target="_blank" class="text-white text-decoration-none">301-343-2483</a>
                     </p>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="fw-bold">Suscríbete</h5>
-                    <form class="subscribe-form mt-3">
-                        <input type="email" class="form-control mb-2" placeholder="Tu correo electrónico">
-                        <button type="submit" class="btn btn-secondary-custom w-100">UNIRSE</button>
-                    </form>
-                </div>
             </div>
-        </div>
-        <div class="copyright text-center py-4 mt-5">
-            <p class="mb-0">© 2026 PeluCanDog. Todos los derechos reservados. <br><small>Designed by Steven Gómez</small></p>
+            <div class="text-center mt-5 pt-3 border-top border-light opacity-75">
+                <p class="mb-0 small">© 2026 PeluCanDog. Todos los derechos reservados. <br><small>Designed by Steven Gómez</small></p>
+            </div>
         </div>
     </footer>
 
-    <script src="code_buy.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/3729edbc1e.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        AOS.init({
+            once: true,
+            offset: 50
+        });
+    </script>
+    
+    <script src="code_buy.js"></script>
 </body>
+
 </html>
