@@ -1,258 +1,166 @@
 /* ==================================================
-   VARIABLES DE COLOR (ESTILO LUXE PET SPA)
+   VARIABLES DE COLOR (Estilo Friendly / Orgánico)
    ================================================== */
 :root {
-    --spa-primary: #2B4C59; /* Teal profundo / Océano oscuro - Contraste perfecto para texto blanco */
-    --spa-secondary: #C48B71; /* Arcilla cálida / Rosa viejo - Acentos elegantes */
-    --spa-bg-soft: #F9F8F6; /* Blanco perlado/arena - Menos fatiga visual que el blanco puro */
-    --text-dark: #2C3539; /* Gris carbón para texto principal */
-    --text-muted: #6B7275; /* Gris suave para párrafos */
-    --bg-main: #FFFFFF;
+    --cyan: #0fb4c5; /* Azul Cyan vibrante del fondo */
+    --cyan-dark: #098e9c; 
+    --peach: #f4ba82; /* Naranja pastel / Durazno de las ondas */
+    --peach-dark: #e09f62;
+    --text-white: #ffffff;
+    --text-dark: #3a3a3a;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    color: var(--text-dark);
-    background-color: var(--spa-bg-soft);
+    font-family: 'Fredoka', sans-serif; /* Tipografía redondeada y amigable */
+    background-color: var(--cyan);
+    color: var(--text-white);
+    overflow-x: hidden; /* Evita scroll horizontal por las animaciones AOS */
 }
 
 /* ==================================================
-   UTILIDADES PERSONALIZADAS
+   SECCIONES Y FONDOS
    ================================================== */
-.text-primary-custom {
-    color: var(--spa-primary) !important;
+.section-cyan {
+    background-color: var(--cyan);
 }
 
-.bg-primary-custom {
-    background-color: var(--spa-primary) !important;
+.section-peach {
+    background-color: var(--peach);
 }
 
-/* Para asegurar que los fondos oscuros siempre tengan texto blanco legible */
-.bg-primary-custom * {
-    color: #FFFFFF !important;
-}
-
-.text-muted {
-    color: var(--text-muted) !important;
-}
-
-.bg-light {
-    background-color: var(--spa-bg-soft) !important;
-}
-
-.underline {
-    width: 60px;
-    height: 4px;
-    background-color: var(--spa-secondary);
-    border-radius: 2px;
-    margin-top: 15px;
+.text-cyan {
+    color: var(--cyan-dark) !important;
 }
 
 /* ==================================================
-   BOTONES
+   NAVEGACIÓN
    ================================================== */
-.btn-primary-custom {
-    background-color: var(--spa-primary);
-    color: #FFFFFF;
-    border: none;
-    font-weight: 600;
-    padding: 0.6rem 1.5rem;
-    transition: all 0.3s ease;
-}
-
-.btn-primary-custom:hover {
-    background-color: #1A303A; /* Un tono aún más oscuro para el hover */
-    color: #FFFFFF;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(43, 76, 89, 0.3);
-}
-
-.btn-secondary-custom {
-    background-color: var(--spa-secondary);
-    color: #FFFFFF;
-    border: none;
-    font-weight: 600;
-    padding: 0.6rem 1.5rem;
-    transition: all 0.3s ease;
-}
-
-.btn-secondary-custom:hover {
-    background-color: #A6725B; /* Tono arcilla más oscuro */
-    color: #FFFFFF;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(196, 139, 113, 0.3);
-}
-
-/* ==================================================
-   BARRA DE NAVEGACIÓN
-   ================================================== */
-.navbar {
-    background-color: var(--bg-main) !important;
-}
-
-.slogan-icon {
-    max-height: 50px;
-    object-fit: contain;
+.navbar-brand .brand-text {
+    letter-spacing: 1px;
 }
 
 .navbar .nav-link {
-    font-weight: 500;
-    color: var(--text-muted);
-    transition: color 0.3s;
+    color: var(--text-white) !important;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .navbar .nav-link:hover, 
 .navbar .nav-link.active {
-    color: var(--spa-primary) !important;
-    font-weight: 600;
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 /* ==================================================
-   HERO SECTION (Inicio)
+   ELEMENTOS ORGÁNICOS (BLOBS Y BOTONES)
    ================================================== */
-.hero-section {
-    /* Degradado oscuro para que el texto blanco de bienvenida resalte perfectamente */
-    background: linear-gradient(135deg, var(--spa-primary) 0%, #172D36 100%);
-    padding-bottom: 5rem;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+/* Figura del 100% NATURAL / SPA */
+.organic-blob {
+    background-color: var(--text-white);
+    color: var(--cyan);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+    /* Generador de Border Radius Orgánico */
+    border-radius: 46% 54% 65% 35% / 46% 41% 59% 54%;
+    transform: rotate(-10deg);
+    transition: all 0.5s ease;
+    animation: morph 6s ease-in-out infinite;
 }
 
-.hero-content {
-    margin-top: 3rem;
+@keyframes morph {
+    0% { border-radius: 46% 54% 65% 35% / 46% 41% 59% 54%; }
+    50% { border-radius: 54% 46% 35% 65% / 54% 59% 41% 46%; }
+    100% { border-radius: 46% 54% 65% 35% / 46% 41% 59% 54%; }
 }
 
-.hero-text h1 {
-    color: #FFFFFF;
-}
-
-.hero-text p {
-    color: #E0E6E8; /* Blanco con un levísimo tinte azul para no deslumbrar */
-}
-
-.floating-img {
-    animation: float 4s ease-in-out infinite;
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-}
-
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-15px); }
-    100% { transform: translateY(0px); }
-}
-
-/* ==================================================
-   TARJETAS Y SERVICIOS
-   ================================================== */
-.service-card, .product-card {
-    border-radius: 20px;
-    background-color: var(--bg-main);
-    transition: all 0.3s ease;
-    overflow: hidden;
-    border: 1px solid rgba(0,0,0,0.03) !important;
-}
-
-.service-hover-card {
-    border-radius: 20px;
-    background-color: var(--bg-main);
-    transition: all 0.3s ease;
-    overflow: hidden;
-    border: 1px solid rgba(0,0,0,0.03) !important;
-}
-
-.service-hover-card:hover, .product-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(43, 76, 89, 0.08) !important;
-}
-
-.icon-circle {
-    width: 70px;
-    height: 70px;
-    background-color: var(--spa-bg-soft);
+.btn-organic {
+    background-color: var(--text-white);
+    color: var(--cyan);
     border: none;
-    color: var(--spa-primary);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+    border-radius: 30px; /* Bordes totalmente redondeados */
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-.service-card:hover .icon-circle {
-    background-color: var(--spa-primary);
-    color: #FFFFFF;
-}
-
-/* ==================================================
-   CONTACTO / BARRA LATERAL
-   ================================================== */
-.contact-sidebar {
-    background-color: var(--spa-primary) !important;
-}
-
-.contact-sidebar p.small {
-    color: #DDE4E6 !important; /* Texto secundario legible sobre el azul oscuro */
-}
-
-/* ==================================================
-   FOOTER Y OTROS COMPONENTES
-   ================================================== */
-footer {
-    background-color: var(--bg-main);
-    border-top: 1px solid #EAEAEA;
-}
-
-.social-icons a {
-    display: inline-block;
-    width: 38px;
-    height: 38px;
-    background-color: var(--spa-bg-soft);
-    color: var(--spa-primary);
-    border-radius: 50%;
-    text-align: center;
-    line-height: 38px;
-    margin-right: 10px;
-    transition: all 0.3s;
-}
-
-.social-icons a:hover {
-    background-color: var(--spa-primary);
-    color: #FFFFFF;
+.btn-organic:hover {
+    background-color: var(--cyan-dark);
+    color: var(--text-white);
     transform: translateY(-3px);
 }
 
-.social-icons-contact a:hover {
-    color: var(--spa-secondary) !important;
-    transform: translateY(-3px);
+/* ==================================================
+   IMÁGENES DE PERROS (Sin fondo)
+   ================================================== */
+.hero-dog, .about-dog {
+    filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.15));
 }
 
-.icon-small {
-    width: 45px;
-    height: 45px;
-    background-color: var(--spa-bg-soft);
-    color: var(--spa-secondary);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.3rem;
-}
-
-.product-badge {
+/* ==================================================
+   ONDAS DIVISORIAS (SHAPE DIVIDERS SVG)
+   ================================================== */
+/* Onda 1: De Cyan a Durazno */
+.custom-shape-divider-bottom {
     position: absolute;
-    top: 15px;
-    left: 15px;
-    background-color: var(--spa-secondary);
-    color: #FFFFFF;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    z-index: 2;
-    box-shadow: 0 4px 6px rgba(196, 139, 113, 0.2);
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 120px;
+}
+
+.custom-shape-divider-bottom .shape-fill-peach {
+    fill: var(--peach);
+}
+
+/* Onda 2: De Durazno a Cyan */
+.custom-shape-divider-bottom-2 {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-2 .shape-fill-cyan {
+    fill: var(--cyan);
+}
+
+/* ==================================================
+   FOOTER REDES SOCIALES
+   ================================================== */
+.social-links a {
+    transition: transform 0.3s;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    transform: scale(1.2) translateY(-3px);
+    color: var(--peach) !important;
 }
