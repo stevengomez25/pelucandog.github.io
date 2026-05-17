@@ -11,28 +11,28 @@ const productos = [
         precio: 35000,
         cantidad: 15,
         desc: "Ideal para piel sensible. Aporta brillo y suavidad natural.",
-        img: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=500"
+        img: "assets/oat.png"
     },
     {
         nombre: "Perfume Relax Lavanda",
         precio: 28000,
         cantidad: 12,
         desc: "Aromaterapia en spray para usar después del cepillado.",
-        img: "https://images.unsplash.com/photo-1595535873420-a59915cdb7bf?q=80&w=500"
+        img: "assets/perfume.jpg"
     },
     {
         nombre: "Snacks Premium Salmón",
         precio: 15000,
         cantidad: 30,
         desc: "Ricos en Omega 3 para fortalecer el pelaje desde adentro.",
-        img: "https://images.unsplash.com/photo-1589924691106-073b69a59b8b?q=80&w=500"
+        img: "assets/salmon.jpg"
     },
     {
         nombre: "Cepillo de Bambú Spa",
         precio: 42000,
         cantidad: 8,
         desc: "Cerdas naturales que masajean la piel mientras desenredan.",
-        img: "https://images.unsplash.com/photo-1598453147852-b13c32174fcb?q=80&w=500"
+        img: "assets/dogs_brush.png"
     }
 ];
 
