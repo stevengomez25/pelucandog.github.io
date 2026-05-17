@@ -94,9 +94,11 @@ body {
 
 .btn-organic:hover {
     background-color: var(--cyan-dark);
-    color: var(--text-white);
+    color: var(--text-white) ;
     transform: translateY(-3px);
 }
+
+
 
 /* ==================================================
    IMÁGENES DE PERROS (Sin fondo)
